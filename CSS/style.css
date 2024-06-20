@@ -1,0 +1,211 @@
+/* Common Css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Heebo", sans-serif;
+    background-color: #DECDAC;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.popup-container {
+    max-width: 485px;
+    margin: 24px;
+    padding: 9rem 0;
+    border-radius: 28px;
+    background-color: #FEFAF3;
+    box-shadow: 0px 2.80px 2.80px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+#popup-btn {
+    background-color: #EBBF53;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.7rem 5rem;
+    border-radius: 31px;
+    font-family: inherit;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#popup-btn:hover {
+    background-color: #dfb344;
+}
+
+.click-icon {
+    position: absolute;
+    user-select: none;
+    bottom: 55px;
+    right: 55px;
+}
+
+.main-popup {
+    width: 100%;
+    max-width: 690px;
+    min-height: 346px;
+    border-radius: 40px;
+    background-color: #FEFAF3;
+    margin: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.cactus-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cactus-icon {
+    margin-top: -35px;
+    user-select: none;
+}
+
+
+.main-popup .text-container {
+    width: 289px;
+}
+
+.main-popup .text-container h2 {
+    font-family: Inika, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.main-popup .text-container p {
+    font-family: Inika, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input-container {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 560px;
+    margin-inline: auto;
+    height: 56px;
+    background-color: #EEE8DD;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container input {
+    width: 100%;
+    border-radius: 28px;
+    padding-left: 25px;
+    outline: none;
+    border: 1px solid #AFA187;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #EEE8DD;
+}
+
+.input-container input::placeholder {
+    color: #AFA187;
+    font-family: Heebo;
+    font-weight: 400;
+}
+
+.subscribe-btn {
+    width: 210px;
+    outline: none;
+    border: none;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    color: #fff;
+    background-color: #EBBF53;
+    cursor: pointer;
+    font-family: Heebo;
+    font-size: 17px;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #dfb344;
+}
+
+.show-popup {
+    display: block;
+    transform: scale(1);
+}
+
+.hide-popup {
+    display: none;
+    transform: scale(0);
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #858585;
+}
+
+.close-icon {
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    top: 5px;
+    user-select: none;
+    font-size: 33px;
+}
+
+
+@media (max-width: 768px) {
+    .popup-container {
+        margin: 20px;
+        padding: 7rem 0;
+    }
+
+    #popup-btn {
+        padding: 0.4rem 4rem;
+        font-size: 18px;
+    }
+
+    .click-icon {
+        bottom: 35px;
+        right: 35px;
+    }
+
+    .main-popup {
+        padding: 1.5rem;
+    }
+
+    .cactus-container {
+        flex-direction: column;
+    }
+
+    .cactus-icon {
+        margin-top: -65px;
+    }
+
+    .main-popup .text-container h2 {
+        font-size: 30px;
+    }
+
+    .main-popup .text-container {
+        text-align: center;
+    }
+}
